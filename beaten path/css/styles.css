@@ -1,0 +1,174 @@
+*{
+	color: white;
+	font-size: 16px;
+}
+body	{
+	padding-top: 76px;
+}
+/*---Credit for the parallax effect goes to Hendry Sadrak https://codepen.io/hendrysadrak/details/ctgaz/ and Grischpel https://codepen.io/grischpel/details/xErZpv 
+
+---*/
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+html, body {
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: space-around;
+  position: relative;
+  width: 100%;
+}
+.container section {
+  width: 100vw;
+  height: 100vh;
+  flex: 1;
+  display: flex;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+}
+.container section:nth-child(1) .image, .container section:nth-child(2) .image {
+  background-image: url('../images/pexels-photo.jpg');
+}
+
+.container section:nth-child(3) .image {
+  background-image: url('../images/woods-landscape-road-loyalsock-state-forest-163703.jpeg');
+}
+.container section:nth-child(4) .image {
+  background-image: url('../images/pexels-photo-236973.jpeg');
+}
+.container section:nth-child(5) .image {
+  background-image: url('../images/pexels-photo-289327.jpeg');
+}
+
+.container section .image {
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 500;
+
+}
+.container section .stuff {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+  max-width: 70%;
+  justify-content: center;
+  text-align: center;
+  z-index: 1000;
+  margin: 0 auto;
+  font-size: 26px;
+  position: relative;
+}
+.container section .stuff h2 {
+  margin: 0px;
+}
+
+header {
+	width: 100%;
+}
+
+.navbar {
+	background-color: #1a1a1a;
+	}
+.navbar-nav {
+	margin-left: auto;
+	}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: inherit;
+  text-decoration: underline;
+}
+
+#box {
+	height: 425px;
+	max-width: 850px;
+	background-color: #1A1A1A;
+	display: flex;
+	align-items: center;
+}
+
+#logo {
+	margin: auto;
+}
+#front-blurb {
+	border-left: 1px solid white;
+	text-align: initial;
+	display: flex;
+	align-items: center;
+	}
+#front-blurb p {
+	font-size: 1.2rem;
+	width: 95%;
+	line-spacing: 1.12rem;
+
+}
+
+
+#travel .stuff, #travel .container {
+	min-width: 100%;
+	padding: 0;
+}
+
+#travel .stuff .row:nth-child(2) {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+.destination {
+	background-color: #1a1a1a;
+	width: 40%;
+	margin: 2.5%;
+	padding: 1.5%;
+	display: flex;
+
+}
+
+.destination p {
+ width: 65%;
+ padding: 5px;
+ font-size: .9rem;
+}
+
+.destination span {
+	height: 180px;
+	width: 180px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: auto 0;
+
+}
+
+
+
+#first {
+	background-image: url("../images/pexels-photo-248771.jpeg");
+}
+#second {
+	background-image: url("../images/pexels-photo-227417.jpeg");
+}
+#third {
+	background-image: url("../images/delicate-arch-night-stars-landscape.jpg");
+}
+#fourth {
+	background-image: url("../images/pexels-photo-247599.jpeg");
+}
